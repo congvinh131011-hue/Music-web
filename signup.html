@@ -18,38 +18,43 @@
 
 <body>
     <!-- login card  -->
-    <div class="login-card color-section">
+    <div class="signup-card color-section">
         <div class="container-fluid">
             <!-- word  -->
             <h3 class="text-center text-white mb-4">Signup to Artify</h3>
             <!-- main  -->
-            <form>
+            <form id="signup-form" action="">
                 <!-- username -->
                 <div class="mb-3">
                     <label for="username" class="form-label text-white">Username</label>
-                    <input type="text" class="form-control" id="username" placeholder="Enter username">
+                    <input id="signup-username" type="text" class="form-control" 
+                        placeholder="Enter username">
                 </div>
                 <!-- email  -->
                 <div class="mb-3">
-                    <label for="email" class="form-label text-white">Email</label>
-                    <input type="text" class="form-control" id="email" placeholder="Enter email">
+                    <label class="form-label text-white">Email</label>
+                    <input id="signup-email" for="email" type="text" class="form-control" 
+                        placeholder="Enter email">
                 </div>
                 <!-- password -->
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <input id="signup-password" type="password" class="form-control"
+                        placeholder="Enter password">
                 </div>
                 <!-- corfim-password  -->
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Comfirm password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <input id="signup-confirm-password" type="password" class="form-control" 
+                        placeholder="Enter password">
                 </div>
-                <!-- remener-me  -->
-                <a type="submit" class="btn btn-spotify w-100 mb-3" href="login.html">Signup</a>
-                <p >Already have account? <a href="login.html" >Login</a></p>
-                
+                <!-- bottom -->
+                <button type="submit" class="btn btn-spotify w-100 mb-3" >Signup</button>
+                <p>Already have account? <a href="login.html">Login</a></p>
             </form>
         </div>
     </div>
+    <script src="./js/register.js"></script>
 </body>
+
 </html>

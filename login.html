@@ -23,31 +23,32 @@
             <!-- word  -->
             <h3 class="text-center text-white mb-4">Login to artify</h3>
             <!-- main  -->
-            <form>
+            <form id="login-form" action="">
                 <!-- email and username  -->
                 <div class="mb-3">
                     <label for="email" class="form-label text-white">Email or username</label>
-                    <input type="text" class="form-control" id="email" placeholder="Enter email or username">
+                    <input id="login-email" type="text" class="form-control" placeholder="Enter email or username">
                 </div>
                 <!-- password -->
                 <div class="mb-3">
                     <label for="password" class="form-label text-white">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                    <input id="login-password" type="password" class="form-control"  placeholder="Enter password">
                 </div>
                 <!-- remener-me  -->
                 <div class="d-flex justify-content-between mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <input id="login-checkbox" class="form-check-input" type="checkbox" >
                         <label class="form-check-label text-white" for="rememberMe">
                             Remember me
                         </label>
                     </div>
                     <a href="forgot-password.html">Forgot your password?</a>
                 </div>
-                <a type="submit" class="btn btn-spotify w-100 mb-3" href="index.html">LOG IN</a>
+                <button type="submit" class="btn btn-spotify w-100 mb-3" >LOG IN</button>
                 <p >Don't have an account? <a href="./signup.html" >Sign up</a></p>
             </form>
         </div>
     </div>
+    <script src="./js/login.js"></script>
 </body>
 </html>
