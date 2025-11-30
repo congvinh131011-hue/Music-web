@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+.color-section {
+    background-color: #e8e7e7;
+    color: #222;
+}
+
+.the-shadow {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16), 0.6px 0.6px rgba(0, 0, 0, 0.254);
+}
+
+.container-fluid {
+    padding: 0% 3%;
+}
+
+
+/* Header */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #000000;
+}
+
+.navbar-brand:hover {
+    opacity: 0.7;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333 !important;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+.nav-item .btn {
+    border: none;
+    color: #333;
+}
+.btn-outline-success:hover{
+    color: white;
+}
+
+
+
+/* Layout */
+.container-music {
+    padding: 1% 3%;
+}
+
+/* Sidebar */
+.libary {
+    margin-right: 10px;
+    width: 23%;
+    height: 540px;
+    border: 1px solid #d0d0d0;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.libary .navbar {
+    padding: 5px 10px;
+}
+
+.create-btn {
+    background-color: #ffffff;
+    border: 1px solid #3c3c3c;
+    border-radius: 30px;
+}
+
+.create-btn:hover {
+    background-color: #ffffff;
+    border: 1px solid #3c3c3c;
+    border-radius: 30px;
+}
+
+.create-btn:focus {
+    background-color: #dedede;
+    border: 1px solid #3c3c3c;
+    border-radius: 30px;
+}
+
+/* as a current  */
+.list-btn {
+    color: rgb(202, 201, 201);
+
+}
+
+.list-btn:hover {
+    color: white;
+}
+
+/* bai hat da thich  */
+.liked-songs-btn {
+    text-decoration: none;
+    background-color: #4b4b4b;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    transition: 0.25s ease;
+}
+
+.liked-songs-btn:hover {
+    background-color: #222;
+}
+
+/* Music Section */
+.music {
+    width: 76%;
+    max-height: 540px;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #cfcfcf;
+    background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+}
+
+/* Toolbar buttons */
+.btn-group .btn {
+    background-color: rgb(231, 231, 231);
+    border-radius: 30px;
+    border: 1px solid #c3c3c3;
+    padding: 6px 15px;
+    transition: 0.2s;
+}
+
+.btn-group .btn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.btn-group .btn:focus {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border-color: #222;
+}
+
+/* Cards */
+.card {
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #222;
+    padding: 10px 20px;
+}
+
+.song-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.volume-range {
+    width: 120px;
+}
+
+/* footer info */
+.footer-content {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-section {
+    min-width: 150px;
+}
+
+.footer-section h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section.social a {
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}

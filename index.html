@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranh Chu</title> <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+     <!-- header -->
+    <header class="header">
+        <div class="container-fluid"> <!-- navigation bar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid"> <!-- Logo --> <a class="navbar-brand" href="#">ARTIFY</a>
+                    <!-- Toggle button (mobile) --> <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span><i class="fa-solid fa-list" style="color: #ffffff;"></i></span> </button>
+                    <!-- Menu content -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Left side -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"> <a href="index.html" class="btn btn-black">Home</a> </li>
+                        </ul> <!-- Right side -->
+                        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center"> <!-- Bell -->
+                            <li class="nav-item"> <button type="button" class="btn btn-black"> <i
+                                        class="fa-solid fa-bell" style="color: #000000;"></i> </button> </li>
+                            <!-- Search form -->
+                            <li class="nav-item">
+                                <form class="d-flex ms-2" role="search"> <input class="form-control me-2" type="search"
+                                        placeholder="Search" aria-label="Search"> <button
+                                        class="btn btn-outline-success" type="submit">Search</button> </form>
+                            </li> <!-- Account dropdown -->
+                            <li class="nav-item dropdown ms-2"> <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown" style="color: #ffffff;"
+                                    aria-expanded="false"> Account </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./account.html" target="_blank">Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Support</a></li>
+                                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="login.html">Log out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header> <!-- tranh chu -->
+    <div class="container-music container-fluid">
+        <div class="row"> <!-- libary -->
+            <div class="libary coll-4 color-section"> <!-- As a list -->
+                <nav class="navbar">
+                    <div class="container-fluid color-section"> <a class="navbar-brand" href="#">Library</a>
+                        <div class="ms-auto"> <button type="button" class="btn btn-black create-btn"> <i
+                                    class="fa-solid fa-plus" style="color: #000000;"></i> </button> <button
+                                type="button" class="btn btn-black" style="border: none;"> <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center" style="color: #000000;"></i>
+                            </button> </div>
+                    </div>
+                </nav> <!-- As a current -->
+                <nav class="navbar">
+                    <div class="container-fluid color-section">
+                        <nav class="navbar ">
+                            <div class="container"> <a class="navbar-brand" href="#"> <i
+                                        class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a> <button
+                                    type="button" class="btn btn-black list-btn">current<i class="fa-solid fa-list"
+                                        style="color: #000000;"></i></button> </a> </div>
+                        </nav>
+                    </div>
+                </nav> <!-- bai hat da thich --> <a class="liked-songs-btn d-flex align-items-center"
+                    href="amnhac.html">
+                    <div class="icon me-3 d-flex justify-content-center align-items-center"> <i
+                            class="fa-solid fa-heart"></i> </div> <span class="text">Bài hát bạn đã thích</span>
+                </a>
+            </div> <!-- music -->
+            <div class="overflow-auto music coll-8 color-section"> <!-- toolbar -->
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group me-2" role="group" aria-label="First group">
+                        <button type="button" class="btn">All</button>
+                    </div>
+                    <div class="btn-group me-2" role="group" aria-label="Second group"> <button type="button"
+                            class="btn ">Music</button> </div>
+                    <div class="btn-group" role="group" aria-label="Third group"> <button type="button"
+                            class="btn">Podcast</button> </div>
+                </div> <br></br> <!-- ablum -->
+                <div id="famous-Ablum" class="carousel slide">
+                    <h3 class="title-music">Types</h3>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <!-- list nghe si dau -->
+                            <div class="row">
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (2).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Country music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (3).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Jazz</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (4).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Romecmatic</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (5).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Life music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (6).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Blues</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (7).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Guiatar</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item "> <!-- list nhac hai -->
+                            <div class="row">
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (2).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Country music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (3).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Jazz</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (4).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Romecmatic</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (5).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Life music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (6).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Blues</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (7).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Guiatar</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> <!-- list nhac ba -->
+                            <div class="row">
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (2).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Country music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (3).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Jazz</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (4).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Romecmatic</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (5).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Life music</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (6).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Blues</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 music-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/071baf33-5467-41d1-9a7a-335bf4a4e17f - Sao chép (7).png"
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Guiatar</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div>
+                    </div> <button class="carousel-control-prev move-btn" type="button" data-bs-target="#famous-Ablum"
+                        data-bs-slide="prev"> <span class="carousel-control-prev-icon btn-carousel-music"
+                            aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> <button
+                        class="carousel-control-next move-btn" type="button" data-bs-target="#famous-Ablum"
+                        data-bs-slide="next"> <span class="carousel-control-next-icon btn-carousel-music"
+                            aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+                </div> <!-- singer -->
+                <div id="singer" class="carousel slide">
+                    <h3 class="title-music">Famous Singer</h3>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"> <!-- list nhac dau -->
+                            <div class="row">
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/ADO.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Ado</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/bruno-mars.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Bruno-mars</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/lady-gaga.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">lady-gaga</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="img/img-musician/Thang.png" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Thang</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/travis-scott.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">travis scott</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/kanggi.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Kanaria</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> <!-- list nhac hai -->
+                            <div class="row">
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/MCK.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">MCK</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/Obito_3.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Obito</p>
+                                        </div>
+                                    </a> </div>
+                                <div class="col-md-2 singer-item"> <a href="amnhac.html" class="card"> <img
+                                            src="./img/img-musician/Son-Tung.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <p class="card-text">Son Tung</p>
+                                        </div>
+                                    </a> </div>
+                            </div>
+                        </div> <button class="carousel-control-prev move-btn" type="button" data-bs-target="#singer"
+                            data-bs-slide="prev"> <span class="carousel-control-prev-icon btn-carousel-music"
+                                aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button>
+                        <button class="carousel-control-next move-btn" type="button" data-bs-target="#singer"
+                            data-bs-slide="next"> <span class="carousel-control-next-icon btn-carousel-music"
+                                aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+                    </div>
+                </div>
+                <div class="footer-content ">
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="#">For Artists</a></li>
+                            <li><a href="#">Developers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section social">
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/X." target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <!-- bottom -->
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 ARTIFY</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- footer -->
+    <footer class="footer text-light py-2">
+        <div class="container-fluid d-flex justify-content-between align-items-center"> <!-- Trái: Bài hát đang phát -->
+            <div class="d-flex align-items-center"> <img
+                    src="https://i.scdn.co/image/ab67616d00004851c3e027b4c14f9a1e34e4e2e5" alt="song cover"
+                    class="song-cover me-2">
+                <div>
+                    <div class="fw-semibold">Song Title</div> <small class="text-secondary">Artist Name</small>
+                </div>
+            </div> <!-- Giữa: Điều khiển nhạc -->
+            <div class="d-flex align-items-center"> <button class="btn btn-dark"><i
+                        class="fa-solid fa-backward-step"></i></button> <button class="btn btn-dark mx-2"><i
+                        class="fa-solid fa-play"></i></button> <button class="btn btn-dark"><i
+                        class="fa-solid fa-forward-step"></i></button> </div> <!-- Phải: Âm lượng -->
+            <div class="d-flex align-items-center"> <i class="fa-solid fa-volume-high me-2"></i> <input type="range"
+                    class="form-range volume-range"> </div>
+        </div>
+    </footer> <!-- bosstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
